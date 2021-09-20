@@ -1,0 +1,15 @@
+{
+  "name": "learning-gh-pages-release",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:awhitty/learning-gh-pages-release.git",
+  "author": "Austin Whittier <austin.whitt@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "scripts": {
+    "build": "cp ./src/* ./dist/",
+    "release": "gh-pages --branch release -s ./dist/**/* -s package.json --dist ."
+  }
+}
