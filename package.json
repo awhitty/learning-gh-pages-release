@@ -10,6 +10,6 @@
   },
   "scripts": {
     "build": "cp ./src/* ./dist/",
-    "release": "gh-pages --branch release -s '(./dist/**/*|package.json)' --dist ."
+    "release": "node release.js"
   }
 }
